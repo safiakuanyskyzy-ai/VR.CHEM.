@@ -855,28 +855,51 @@ footer > p {
         flex: 0 0 auto;
     }
 
-    /* ===== SIGNUP (уменьшаем и делаем компактным) ===== */
 
+    /*сигнап*/
     .signup-box {
-        width: 85%;
-        margin: 30px auto;
-        padding: 20px;
-        border-radius: 12px;
-    }
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
-    .signup-box h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
+/* ВАЖНО: фикс вылезающих полей */
+.signup-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 
-    .signup-box input {
-        padding: 10px;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
+/* кнопка тоже строго в границах */
+.signup-box button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+}
 
-    .signup-box button {
-        padding: 10px;
-        font-size: 14px;
-    }
+
+
+
+
+.features {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.gip {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.progects {
+    margin-top: 0;
+    padding-top: 60px;
+}
+
 }
