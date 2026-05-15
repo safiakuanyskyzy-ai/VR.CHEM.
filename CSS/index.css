@@ -704,7 +704,13 @@ footer > p {
         overflow-x: hidden;
     }
 
-    /* ===== HERO (сделаем чище и современнее) ===== */
+    .container {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    /* ===== HERO (главный блок) ===== */
     .hero {
         display: flex;
         flex-direction: column;
@@ -715,7 +721,6 @@ footer > p {
 
     .hero--info {
         width: 100%;
-        padding-top: 10px;
     }
 
     .hero--info h1 {
@@ -726,6 +731,7 @@ footer > p {
     .hero--info p {
         font-size: 14px;
         line-height: 1.6;
+        opacity: 0.95;
     }
 
     .hero img {
@@ -734,19 +740,18 @@ footer > p {
         max-width: 260px;
     }
 
-    /* ===== ТРЕНДИНГ (карточки как современные плитки) ===== */
+    /* ===== FEATURES (инновация блоки) ===== */
     .trending .things {
         flex-direction: column;
-        gap: 18px;
+        gap: 16px;
         align-items: center;
     }
 
     .hover-effect {
         width: 92%;
-        height: auto;
         padding: 22px;
         border-radius: 14px;
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(255,255,255,0.05);
         backdrop-filter: blur(6px);
         transition: 0.3s;
     }
@@ -756,101 +761,94 @@ footer > p {
     }
 
     .hover-effect img {
-        width: 70px;
+        width: 55px;
     }
 
     .trending h2 {
         text-align: center;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .trending .see-all {
         float: none;
-        display: block;
         margin: 10px auto;
+        display: block;
     }
 
-    /* ===== BOOTS (БІЗДІҢ ЖОСПАР — уже оставляем как у тебя, но усиливаем аккуратность) ===== */
+    /* ===== БІЗДІҢ ЖОСПАР (уже улучшенный, чуть мягче) ===== */
     .boots-container {
-        padding: 30px 16px;
+        padding: 25px 16px;
     }
 
-    /* ===== BOOTS TITLE ===== */
     .boots-container h1 {
         font-size: 24px;
         text-align: center;
-        margin-bottom: 25px;
     }
 
-    /* ===== IMAGE ===== */
-    .right-img {
-        width: 100%;
-        float: none;
-        margin: 0 0 20px 0;
-        border-radius: 12px;
-    }
-
-    /* ===== BLOCKS ===== */
     .boots-container .block {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 14px;
-        border-radius: 12px;
-        margin-bottom: 12px;
+        background: rgba(255,255,255,0.04);
+        padding: 16px;
+        border-radius: 14px;
+        margin-bottom: 14px;
     }
 
     .boots-container .block h2 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .boots-container .block p {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .right-img {
         width: 100%;
-    }
-
-    .boots-container .btn {
-        width: 100%;
-        padding: 12px;
-    }
-
-    /* ===== SCROLL IMAGES (чуть мягче) ===== */
-    .scroll-container img {
-        max-height: 200px;
-        transform: scale(0.85);
-        filter: blur(3px);
-    }
-
-    .scroll-container img.visible {
-        transform: scale(1);
-        filter: none;
+        float: none;
+        margin-bottom: 15px;
+        border-radius: 12px;
     }
 
     /* ===== PROJECTS ===== */
+    .progects h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .progects p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
     .progects .images {
         overflow-x: auto;
         flex-wrap: nowrap;
-        gap: 10px;
+        gap: 12px;
     }
 
     .progects .images img {
         width: 230px;
         flex: 0 0 auto;
+        border-radius: 10px;
     }
 
-    /* ===== SIGNUP (ЕЩЁ МЕНЬШЕ И АККУРАТНЕЕ) ===== */
+    /* ===== SIGNUP (СДЕЛАЛА ЧУТЬ МЕНЬШЕ, КАК ТЫ ХОТЕЛА) ===== */
     .signup-box {
         width: 78%;
         margin: 25px auto;
-        padding: 16px;
+        padding: 18px;
         border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
     .signup-box h2 {
         font-size: 18px;
+        margin-bottom: 12px;
     }
 
     .signup-box input {
         padding: 9px;
         font-size: 13px;
+        margin-bottom: 9px;
     }
 
     .signup-box button {
