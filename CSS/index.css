@@ -678,3 +678,107 @@ footer > p {
 .signup-box button:hover {
     background: #333;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== RESPONSIVE FIX (PHONE) ===== */
+
+@media (max-width: 768px) {
+
+    /* контейнер больше не фиксированный */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* HEADER */
+    header nav {
+        float: none;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* HERO */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero--info {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .hero--info h1 {
+        font-size: 40px;
+    }
+
+    .hero--info p {
+        font-size: 14px;
+    }
+
+    .hero img {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* FEATURES */
+    .trending .things {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* BOOTS SECTION */
+    .right-img {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .boots-container .block p {
+        width: 100%;
+    }
+
+    /* SCROLL IMAGES */
+    .scroll-container img {
+        max-height: 250px;
+    }
+
+    /* PROJECT IMAGES */
+    .progects .images {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* SIGNUP */
+    .signup-box {
+        width: 90%;
+        margin: 40px auto;
+    }
+}
