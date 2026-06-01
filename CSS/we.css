@@ -227,7 +227,7 @@ footer hr {
 
 
 
-@media (max-width: 768px) {{
+@media (max-width: 768px) {
 
     *,
     *::before,
@@ -241,6 +241,10 @@ footer hr {
         overflow-x: hidden;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         width: 100%;
         max-width: 100%;
@@ -248,44 +252,28 @@ footer hr {
         margin: 0 auto;
     }
 
-    .things,
-    .bottom-things {
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .hover-effect {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .hover-effect img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: 100%;
-        padding: 0 16px;
-    }
-
-    /* HEADER */
+    /* Жоғарғы менюді бекіту */
     header {
-        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background: rgba(30, 30, 47, 0.95);
+        backdrop-filter: blur(10px);
+
         text-align: center;
+        padding: 15px 0;
     }
 
-    .MODEQ {
+    /* Логотип */
+    .MODEQ,
+    .VRCHEM {
         display: block;
-        margin-bottom: 20px;
+        text-align: center;
+        margin-bottom: 15px;
         font-size: 24px;
     }
 
+    /* Меню */
     header nav {
         float: none;
         width: 100%;
@@ -300,6 +288,8 @@ footer hr {
         align-items: center;
         gap: 12px;
         padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     header nav ul li a {
@@ -308,6 +298,14 @@ footer hr {
 
     header nav ul li.btn a {
         padding: 8px 12px;
+    }
+
+    /* Сары сызықты алып тастау */
+    header nav ul li::after,
+    header nav ul li.active::after,
+    header nav ul li:hover::after {
+        display: none !important;
+        content: none !important;
     }
 
     /* SECTION */
@@ -323,12 +321,14 @@ footer hr {
 
     /* TOP ROW */
     .things {
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 25px;
     }
 
     /* BOTTOM ROW */
     .bottom-things {
+        width: 100%;
         grid-template-columns: 1fr;
         gap: 25px;
         margin-top: 25px;
@@ -337,12 +337,14 @@ footer hr {
     /* CARD */
     .hover-effect {
         width: 100%;
+        max-width: 100%;
         min-height: auto;
         padding: 20px;
     }
 
     .hover-effect img {
-        height: 240px;
+        width: 100%;
+        height: auto;
     }
 
     .hover-effect span {
@@ -359,5 +361,4 @@ footer hr {
         padding: 25px 15px;
     }
 }
-
 
