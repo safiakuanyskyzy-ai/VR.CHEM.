@@ -704,6 +704,69 @@ footer > p {
         overflow-x: hidden;
     }
 
+    /* Жоғарғы менюді бекіту */
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background: rgba(30, 30, 47, 0.95);
+        backdrop-filter: blur(10px);
+
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    /* Логотип (VRCHEM / MODEQ) */
+    .VRCHEM,
+    .MODEQ {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    /* Меню ортасына */
+    header nav {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Батырма болса */
+    header nav ul li.btn a {
+        padding: 8px 12px;
+    }
+
+    /* Сары сызықты толық өшіру */
+    header nav ul li::after,
+    header nav ul li.active::after,
+    header nav ul li:hover::after {
+        display: none !important;
+        content: none !important;
+    }
+
+}
+
+    body {
+        overflow-x: hidden;
+    }
+
     /* контейнер — аккуратный центр */
     .container {
         width: 100%;
