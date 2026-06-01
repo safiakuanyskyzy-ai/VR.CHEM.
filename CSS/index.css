@@ -717,15 +717,22 @@ footer > p {
     }
 
     header nav {
-        float: none;
-        width: 100%;
-    }
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
     header .MODEQ {
         display: block;
