@@ -227,7 +227,43 @@ footer hr {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {{
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .things,
+    .bottom-things {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .hover-effect {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hover-effect img {
+        width: 100%;
+        height: auto;
+    }
+}
 
     body {
         overflow-x: hidden;
