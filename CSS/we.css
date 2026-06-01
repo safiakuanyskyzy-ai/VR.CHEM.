@@ -206,3 +206,120 @@ footer hr {
     background: #555;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .MODEQ {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header nav ul li.btn a {
+        padding: 8px 12px;
+    }
+
+    /* SECTION */
+    .trending {
+        padding: 50px 0;
+    }
+
+    .trending h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    /* TOP ROW */
+    .things {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* BOTTOM ROW */
+    .bottom-things {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    /* CARD */
+    .hover-effect {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .hover-effect img {
+        height: 240px;
+    }
+
+    .hover-effect span {
+        font-size: 22px;
+    }
+
+    .hover-effect p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 25px 15px;
+    }
+}
